@@ -273,8 +273,8 @@ public class Mario : MonoBehaviour {
 			isDashing = Input.GetButton ("Dash");
 			isCrouching = Input.GetButton ("Crouch");
 			isShooting = Input.GetButtonDown ("Dash");
-			jumpButtonHeld = Input.GetButton ("Jump");
-			if (Input.GetButtonUp ("Jump")) {
+			jumpButtonHeld = Input.GetKey ("space");
+			if (Input.GetKeyUp ("space")) {
 				jumpButtonReleased = true;
 			}
 		}
